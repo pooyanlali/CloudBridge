@@ -1,2 +1,2 @@
 PROJECT UNDER DEVELOPMENT
-Currently only the mapping registry has been completed 
+Project can now generate the output of the canonical IR and the gap report of the source cloud. 
