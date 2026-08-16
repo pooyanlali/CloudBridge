@@ -13,3 +13,8 @@ venv/
 # IDEs
 .vscode/
 .idea/
+
+# outputs
+*.log
+*.json
+migration_output/
