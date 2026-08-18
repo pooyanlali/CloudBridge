@@ -12,7 +12,7 @@ them, plus the handful of things that cannot be written as a simple rule:
 Anything we cannot translate is handed to the reporter instead of being
 dropped quietly.
 
-The shape we produce is:
+The shape it produces is:
 
     {
       "storage_accounts": [ {...}, ... ],
@@ -45,7 +45,7 @@ AWS_RECORD_TYPES = {"a", "aaaa", "caa", "cname", "ds", "mx", "naptr",
 SECURITY_SENSITIVE = {"encryption", "policy", "acl", "logging",
                       "public_access_block", "public_network_access_enabled"}
 
-# The field generator.py cannot write a resource without. If the source did
+# The field generator cannot write a resource without. If the source did
 # not give us one there is nothing sensible to generate, so we drop the
 # resource and say so rather than crashing later on.
 REQUIRED_FIELDS = {
