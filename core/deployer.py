@@ -2,9 +2,8 @@
 core/deployer.py
 Runs the Terraform command line tool against the folder we just generated.
 
-This is a thin wrapper around subprocess. It does not decide anything; it runs
-init, plan or apply and raises an error if Terraform is unhappy. Deciding what
-to do about that error is migrate.py's job, which is why nothing in here calls
+This  runs init, plan or apply and raises an error if Terraform is having problems.
+Deciding what to do about that error is migrate.py's job, which is why nothing in here calls
 sys.exit(): a library that kills the interpreter cannot be reused or tested.
 """
 
