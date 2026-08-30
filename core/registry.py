@@ -124,7 +124,8 @@ MAPPING_REGISTRY = {
             },
             "attribute_mappings": {
                 "bucket": "name",
-                "region": "location"
+                "region": "location",
+                "tags": "tags"
             },
             "structural_mappings": {
                 "versioning": {
@@ -140,7 +141,8 @@ MAPPING_REGISTRY = {
         "aws_route53_zone": {
             "target_type": "azurerm_dns_zone",
             "attribute_mappings": {
-                "name": "name"
+                "name": "name",
+                "tags": "tags"
             },
             "structural_mappings": {
                 "records": {
@@ -164,7 +166,8 @@ MAPPING_REGISTRY = {
             },
             "attribute_mappings": {
                 "name": "bucket",
-                "location": "region"
+                "location": "region",
+                "tags": "tags"
             },
             "structural_mappings": {
                 "blob_service_properties": {
@@ -179,7 +182,8 @@ MAPPING_REGISTRY = {
         "azurerm_dns_zone": {
             "target_type": "aws_route53_zone",
             "attribute_mappings": {
-                "name": "name"
+                "name": "name",
+                "tags": "tags"
             },
             "structural_mappings": {
                 "records": {
@@ -187,7 +191,7 @@ MAPPING_REGISTRY = {
                     "handler_directive": "process_dns_records"
                 }
             },
-            "ignored_attributes": ["resource_group_name", "tags"]
+            "ignored_attributes": ["resource_group_name"]
         }
     }
 }
