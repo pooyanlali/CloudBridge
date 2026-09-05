@@ -42,7 +42,7 @@ logger = logging.getLogger("migrate")
 # ----------------------------------------------------------------------
 # The Azure subscription to read from when --direction azure2aws is used.
 # Put your own subscription ID here.
-AZURE_SUBSCRIPTION_ID = "987d03d5-56b9-456e-a47e-d9c81fe109ea"
+AZURE_SUBSCRIPTION_ID = "Enter the Subscription ID of the Azure account you want to migrate from here"
 
 
 def parse_args():
